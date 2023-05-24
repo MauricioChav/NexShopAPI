@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CbkJNvUovKT9+4IIBGdeMSDqKWgIf7CXg8i9XLN2hSw=",
+  "Source": "NexShopAPI",
+  "BasePath": "_content/NexShopAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
