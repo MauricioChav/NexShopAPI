@@ -32,9 +32,9 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 
 builder.Services.AddIdentityCore<ApplicationUser>()
     .AddRoles<IdentityRole>()
-    //.AddTokenProvider<DataProtectorTokenProvider<ApplicationUser>>("NexShopAPI")
-    .AddEntityFrameworkStores<ApplicationDBContext>();
-    //.AddDefaultTokenProviders();
+    .AddTokenProvider<DataProtectorTokenProvider<ApplicationUser>>("NexShopAPI")
+    .AddEntityFrameworkStores<ApplicationDBContext>()
+    .AddDefaultTokenProviders();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

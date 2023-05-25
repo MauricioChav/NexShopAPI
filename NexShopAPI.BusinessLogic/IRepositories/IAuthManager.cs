@@ -12,5 +12,7 @@ namespace NexShopAPI.BusinessLogic.IRepositories
     {
         Task<IEnumerable<IdentityError>> Register(ApplicationUserDTO userDTO);
         Task<AuthResponseDTO> Login(LoginDTO loginDTO);
+        Task<string> CreateRefreshToken();
+        Task<AuthResponseDTO> VerifyRefreshToken(AuthResponseDTO request);
     }
 }
